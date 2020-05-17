@@ -5,7 +5,7 @@ import voivodeship
 import areaTotal
 import elevation
 
-cities = data_crowler.get_list_of_cities()[:5]
+cities = data_crowler.get_list_of_cities()
 dbpedia_cities_jsons = list(map(lambda s: data_crowler.get_city_json(s), cities))
 
 # Import cities
