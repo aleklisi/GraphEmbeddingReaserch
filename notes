@@ -1,28 +1,10 @@
-// wejść na http://localhost:7474/browser/
+// Na następne spotkanie:
+//  - sprobwać zaimplemetnować node2vec
+//  - rozczytać co dalej:
+//    - Do zrobić zęby na końcy dla node miec wektor?
+//    - Co sie dizeje z tymi ściezkami?
 
-// #1 use dbpedia  instead of wikiepdaia
-// pokazać:
+// https://github.com/phanein/deepwalk
 
-// cities_db/import_data_to_db.py
-
-MATCH (n) RETURN n;
-
-// cities_db/voivodeship.py - kwanty
-
-// # 2 import cities with ranges
-// pokazać:
-// cities_db/elevation.py - przedziały
-
-
-MATCH (n:City {name: "Kraków"})-[r]->(m) RETURN n, m;
-
-// Jest oparte na plikowe reprezentacji grafu
-// https://pypi.org/project/deepwalk/
-
-// # 3 how to buid vector from embedding method
-// pokazać:
-// cities_db/deep_walk.py
-
-// #4 inport rest of fb info
-// https://snap.stanford.edu/data/ego-Facebook.html
-// https://snap.stanford.edu/data/readme-Ego.txt
+// Shallow vs deep encoders
+// https://youtu.be/7JELX6DiUxQ
