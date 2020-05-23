@@ -8,10 +8,11 @@ def get_total_area(city_with_json):
 
 def city_areas():
     return [
+        ("very_very_small", lambda x: x < 50.0),
         ("very_small", lambda x: x < 100.0),
-        ("small", lambda x: x >= 100.0 and x < 200),
-        ("middle", lambda x: x >= 200.0 and x < 300),
-        ("big", lambda x: x >= 300.0)
+        ("small", lambda x: x < 200),
+        ("middle", lambda x: x < 300),
+        ("big", lambda x: True)
     ]
 
 
